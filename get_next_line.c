@@ -73,7 +73,7 @@ char	*ft_store(int fd, char *start_str)
 	int			fd_read;
 	char		*tmp;
 
-	tmp = (char *)malloc(1 + BUFFER_SIZE);
+	tmp = (char *)malloc(1 + (size_t)BUFFER_SIZE);
 	if (!tmp)
 		return (NULL);
 	fd_read = 1;
